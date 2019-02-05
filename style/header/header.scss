@@ -1,0 +1,42 @@
+.header {
+    display: block;
+    height: 100vh;
+    background-color: #141311;
+    text-align: center;
+    position: relative;
+
+    &__button-nav {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 3;
+
+        &--is-active:target~.nav {
+            display: block;
+        }
+    }
+
+    &__main-text {
+        z-index: 1;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        right: 20%;
+    }
+
+    &__secondary-text {
+        z-index: 1;
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+        right: 20%;
+    }
+}
